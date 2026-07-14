@@ -14,7 +14,9 @@ body{margin:0; background:transparent; overflow-x:hidden; -webkit-text-size-adju
 .tabs::-webkit-scrollbar{display:none;}
 .tab{flex:0 0 auto; border:none; background:#F1EFF4; color:#2b1530; font-weight:700; font-size:14.5px; padding:12px 20px; border-radius:999px; cursor:pointer; font-family:inherit; white-space:nowrap; transition:.15s;}
 .tab.active{background:#15151a; color:#fff;}
-.panel{background:#fff; border-radius:26px; padding:0; overflow:hidden; border:3px solid #ffffff; box-shadow:0 24px 60px -34px rgba(60,20,50,.4), 0 3px 18px rgba(60,20,50,.10); margin-top:0; height:calc(100vh - 46px); max-height:600px; min-height:400px; display:flex; flex-direction:column;}
+.panel{position:relative; background:#fff; border-radius:26px; padding:0; overflow:hidden; border:3px solid #ffffff; margin-top:0; height:calc(100vh - 46px); max-height:600px; min-height:400px; display:flex; flex-direction:column;}
+
+
 .eyebrow{color:#fc82b8; font-weight:700; font-size:13px; margin-bottom:8px;}
 .ptitle{font-weight:800; font-size:27px; color:#15151a; letter-spacing:-.5px; line-height:1.05;}
 .pdesc{color:#6f6676; font-size:15px; line-height:1.4; margin:12px 0 0; max-width:340px;}
@@ -99,7 +101,7 @@ body{margin:0; background:transparent; overflow-x:hidden; -webkit-text-size-adju
   #dash{max-width:920px; padding:16px 20px 28px;}
   .panel{height:calc(100vh - 48px); max-height:700px; border-radius:28px;}
   .tabs{padding:16px 22px 12px;}
-  .tab{font-size:13.5px; padding:10px 17px;}
+  .tabs .tab{font-size:12.5px; padding:8px 14px;}
   .gridwrap{padding:20px 24px 24px;}
   .phead{padding:2px 0 16px;}
   .ptitle{font-size:24px;}
