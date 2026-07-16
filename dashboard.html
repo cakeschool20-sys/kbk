@@ -11,9 +11,9 @@
 html,body{height:100%;}
 body{margin:0; background:transparent; overflow:hidden; position:relative; -webkit-text-size-adjust:100%; font-family:'Inter',-apple-system,system-ui,sans-serif; color:#2b1530; -webkit-font-smoothing:antialiased;}
 #dash{position:absolute; top:0; bottom:0; left:0; right:0; max-width:460px; margin:0 auto; padding:14px 16px 28px; overflow:hidden;}
-.tabs{display:flex; gap:10px; overflow-x:auto; padding:18px 20px 14px; scrollbar-width:none; border-bottom:1px solid #f1edf2; flex:0 0 auto;}
+.tabs{display:flex; flex-wrap:wrap; justify-content:center; gap:7px; overflow:visible; padding:16px 16px 13px; border-bottom:1px solid #f1edf2; flex:0 0 auto;}
 .tabs::-webkit-scrollbar{display:none;}
-.tab{flex:0 0 auto; border:none; background:#F1EFF4; color:#2b1530; font-weight:700; font-size:14.5px; padding:12px 20px; border-radius:999px; cursor:pointer; font-family:inherit; white-space:nowrap; transition:.15s;}
+.tab{flex:0 0 auto; border:none; background:#F1EFF4; color:#2b1530; font-weight:700; font-size:12px; padding:8px 12px; border-radius:999px; cursor:pointer; font-family:inherit; white-space:nowrap; transition:.15s;}
 .tab.active{background:#15151a; color:#fff;}
 .panel{position:relative; background:#fff; border-radius:26px; padding:0; overflow:hidden; border:3px solid #ffffff; margin-top:0; height:calc(100vh - 46px); max-height:600px; min-height:400px; display:flex; flex-direction:column;}
 
@@ -104,7 +104,7 @@ body{margin:0; background:transparent; overflow:hidden; position:relative; -webk
 @media(min-width:640px){
   #dash{max-width:920px; padding:16px 20px 28px;}
   .panel{height:calc(100vh - 48px); max-height:700px; border-radius:28px;}
-  .tabs{padding:16px 22px 12px;}
+  .tabs{flex-wrap:nowrap; justify-content:flex-start; overflow-x:auto; scrollbar-width:none; gap:10px; padding:16px 22px 12px;}
   .tabs .tab{font-size:12.5px; padding:8px 14px;}
   .gridwrap{padding:20px 24px 24px;}
   .phead{padding:2px 0 16px;}
