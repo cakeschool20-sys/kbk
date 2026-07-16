@@ -8,8 +8,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 *{box-sizing:border-box;}
-body{margin:0; background:transparent; overflow-x:hidden; -webkit-text-size-adjust:100%; font-family:'Inter',-apple-system,system-ui,sans-serif; color:#2b1530; -webkit-font-smoothing:antialiased;}
-#dash{max-width:460px; margin:0 auto; padding:14px 16px 28px;}
+html,body{height:100%;}
+body{margin:0; background:transparent; overflow:hidden; position:relative; -webkit-text-size-adjust:100%; font-family:'Inter',-apple-system,system-ui,sans-serif; color:#2b1530; -webkit-font-smoothing:antialiased;}
+#dash{position:absolute; top:0; bottom:0; left:0; right:0; max-width:460px; margin:0 auto; padding:14px 16px 28px; overflow:hidden;}
 .tabs{display:flex; gap:10px; overflow-x:auto; padding:18px 20px 14px; scrollbar-width:none; border-bottom:1px solid #f1edf2; flex:0 0 auto;}
 .tabs::-webkit-scrollbar{display:none;}
 .tab{flex:0 0 auto; border:none; background:#F1EFF4; color:#2b1530; font-weight:700; font-size:14.5px; padding:12px 20px; border-radius:999px; cursor:pointer; font-family:inherit; white-space:nowrap; transition:.15s;}
